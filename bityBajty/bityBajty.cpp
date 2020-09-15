@@ -5,117 +5,136 @@ using namespace std;
 
 
 void przeliczanieJednostek() {
-	string wartosc;
-	int b, B, Mb, MB, Gb, GB;
+	
+	float b, B, kb,kB, Mb, MB, Gb, GB;
 	float oddzielone;
 	string wynik;
+	string wartosc;
 
 	system("CLS");
 	cout << "Podaj wartosc do przeliczenia (bez spacji miedzy wartoscia a jednostka): ";
 	cin >> wartosc;
 
 	for (int i = 0; i < wartosc.length(); i++) {
-		switch (wartosc[i]) {
-		case 'b':
+
+		if (wartosc[i] == 'k') {
+
 			wynik = wartosc.substr(0, i);
 			oddzielone = stoi(wartosc);
-			cout << oddzielone << " jest rowna: " << endl;
-			cout << oddzielone / 8 << " B" << endl;
-			cout << oddzielone / 1000 << " kb" << endl;
-			cout << oddzielone / 1000 / 8 << " kB" << endl;
-			cout << oddzielone / 1000000 << " Mb" << endl;
-			cout << oddzielone / 1000000 / 8 << " MB" << endl;
-			break;
+			if (wartosc[i + 1] == 'b') {
 
+				kb = oddzielone;
+				b = kb * 1000;
+				B = b / 8;
+				kB = b / 1000 / 8;
+				Mb = b / 1000000;
+				MB = b / 1000000 / 8;
+				Gb = b / 1000000000;
+				GB = b / 1000000000 / 8;
+			}
+			else if (wartosc[i + 1] == 'B') {
 
-		case 'B':
-			wynik = wartosc.substr(0, i);
-			oddzielone = stoi(wartosc);
-			cout << oddzielone << " jest rowna: " << endl;
-			cout << oddzielone * 8 << " b" << endl;
-			cout << oddzielone / 1000 * 8 << " kb" << endl;
-			cout << oddzielone / 1000 << " kB" << endl;
-			cout << oddzielone / 1000000 * 8 << " Mb" << endl;
-			cout << oddzielone / 1000000 << " MB" << endl;
-			break;
-
-		case 'kb':
-			wynik = wartosc.substr(0, i);
-			oddzielone = stoi(wartosc);
-			cout << oddzielone << " jest rowna: " << endl;
-			cout << oddzielone * 1000 << " b" << endl;
-			cout << oddzielone * 1000 / 8 << " B" << endl;
-			cout << oddzielone / 8 << " kB" << endl;
-			cout << oddzielone / 1000 << " Mb" << endl;
-			cout << oddzielone / 1000 / 8 << " MB" << endl;
-			break;
-
-		case 'kB':
-			wynik = wartosc.substr(0, i);
-			oddzielone = stoi(wartosc);
-			cout << oddzielone << " jest rowna: " << endl;
-			cout << oddzielone * 1000 / 8 << " b" << endl;
-			cout << oddzielone * 1000 << " B" << endl;
-			cout << oddzielone / 8 << " kb" << endl;
-			cout << oddzielone / 1000 * 8 << " Mb" << endl;
-			cout << oddzielone / 1000 << " MB" << endl;
-			break;
-
-		case 'Mb':
-			wynik = wartosc.substr(0, i);
-			oddzielone = stoi(wartosc);
-			cout << oddzielone << " jest rowna: " << endl;
-			cout << oddzielone * 1000000 << " b" << endl;
-			cout << oddzielone * 1000000 / 8 << " B" << endl;
-			cout << oddzielone * 1000 << " kb" << endl;
-			cout << oddzielone * 1000 / 8 << " kB" << endl;
-			cout << oddzielone / 8 << " MB" << endl;
-			break;
-
-		case 'MB':
-			wynik = wartosc.substr(0, i);
-			oddzielone = stoi(wartosc);
-			cout << oddzielone << " jest rowna: " << endl;
-			cout << oddzielone * 1000000 * 8 << " b" << endl;
-			cout << oddzielone * 1000000 << " B" << endl;
-			cout << oddzielone * 1000 * 8 << " kb" << endl;
-			cout << oddzielone * 1000 << " kB" << endl;
-			cout << oddzielone * 8 << " Mb" << endl;
-			break;
-
-		case 'Gb':
-			wynik = wartosc.substr(0, i);
-			oddzielone = stoi(wartosc);
-			cout << oddzielone << " jest rowna: " << endl;
-			cout << oddzielone * 1000000 << " b" << endl;
-			cout << oddzielone * 1000000 / 8 << " B" << endl;
-			cout << oddzielone * 1000 << " kb" << endl;
-			cout << oddzielone * 1000 / 8 << " kB" << endl;
-			cout << oddzielone / 1000 << " Mb" << endl;
-			cout << oddzielone / 1000 / 8 << " MB" << endl;
-			break;
-
-		case 'GB':
-			wynik = wartosc.substr(0, i);
-			oddzielone = stoi(wartosc);
-			cout << oddzielone << " jest rowna: " << endl;
-			cout << oddzielone * 1000000 * 8 << " b" << endl;
-			cout << oddzielone * 1000000 << " B" << endl;
-			cout << oddzielone * 1000 * 8 << " kb" << endl;
-			cout << oddzielone * 1000 << " kB" << endl;
-			cout << oddzielone / 1000 / 8 << " Mb" << endl;
-			cout << oddzielone / 1000 << " MB" << endl;
-			break;
-
-
-
+				kB = oddzielone;
+				b = kB * 8000;
+				B = b / 8;
+				kb = b / 1000;
+				Mb = b / 1000000;
+				MB = b / 1000000 / 8;
+				Gb = b / 1000000000;
+				GB = b / 1000000000 / 8;
+			}
 		}
+		else if (wartosc[i] == 'b') {
+			wynik = wartosc.substr(0, i);
+			oddzielone = stoi(wartosc);
+			b = oddzielone;
+			B = b / 8;
+			kb = b / 1000;
+			kB = b / 1000 / 8;
+			Mb = b / 1000000;
+			MB = b / 1000000 / 8;
+			Gb = b / 1000000000;
+			GB = b / 1000000000 / 8;
+		}
+		else if (wartosc[i] == 'B') {
+			wynik = wartosc.substr(0, i);
+			oddzielone = stoi(wartosc);
+			B = oddzielone;
+			b = B * 8;
+			kb = b / 1000;
+			kB = b / 1000 / 8;
+			Mb = b / 1000000;
+			MB = b / 1000000 / 8;
+			Gb = b / 1000000000;
+			GB = b / 1000000000 / 8;
+		}
+		else if (wartosc[i] == 'M') {
+			wynik = wartosc.substr(0, i);
+			oddzielone = stoi(wartosc);
+			
+			if (wartosc[i + 1] == 'b') {
+				Mb = oddzielone;
+				b = Mb * 1000000;
+				B = b / 8;
+				kb = b / 1000;
+				kB = b / 1000 / 8;
+				MB = b / 1000000 / 8;
+				Gb = b / 1000000000;
+				GB = b / 1000000000 / 8;
+			}
+			else if (wartosc[i + 1] == 'B') {
+				MB = oddzielone;
+				b = MB * 8000000;
+				B = b / 8;
+				kb = b / 1000;
+				kB = b / 1000 / 8;
+				Mb = b / 1000000;
+				Gb = b / 1000000000;
+				GB = b / 1000000000 / 8;
+			}
+		}
+		else if (wartosc[i] == 'G') {
+			wynik = wartosc.substr(0, i);
+			oddzielone = stoi(wartosc);
+
+			if (wartosc[i + 1] == 'b') {
+				Gb = oddzielone;
+				b = Gb * 1000000000;
+				B = b / 8;
+				kb = b / 1000;
+				kB = b / 1000 / 8;
+				Mb = b / 1000000;
+				MB = b / 1000000 / 8;
+				GB = b / 1000000000 / 8;
+			}
+			else if (wartosc[i + 1] == 'B') {
+				GB = oddzielone;
+				b = Gb * 8000000000;
+				B = b / 8;
+				kb = b / 1000;
+				kB = b / 1000 / 8;
+				Mb = b / 1000000;
+				MB = b / 1000000 / 8;
+				Gb = b / 1000000000;
+			}
+		}
+			
 
 
-
+		
 
 	}
 
+
+	cout << wartosc << " jest rowne: " << endl;
+	cout << b << " b" << endl;
+	cout << B << " B" << endl;
+	cout << kb << " kb" << endl;
+	cout << kB << " kB" << endl;
+	cout << Mb << " Mb" << endl;
+	cout << MB << " MB" << endl;
+	cout << Gb << " Gb" << endl;
+	cout << GB << "GB" << endl;
 
 }
 

@@ -1,0 +1,4 @@
+﻿  bityBajty.cpp
+D:\Programowanie\bityBajty\bityBajty\bityBajty.cpp(18,20): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+D:\Programowanie\bityBajty\bityBajty\bityBajty.cpp(23,21): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
+  bityBajty.vcxproj -> D:\Programowanie\bityBajty\Debug\bityBajty.exe
