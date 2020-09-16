@@ -1,0 +1,7 @@
+﻿  bityBajty.cpp
+C:\Users\Liceum_r\Documents\Filip Hanslik\zmianaJednostek\bityBajty\bityBajty.cpp(23,21): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Liceum_r\Documents\Filip Hanslik\zmianaJednostek\bityBajty\bityBajty.cpp(49,21): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Liceum_r\Documents\Filip Hanslik\zmianaJednostek\bityBajty\bityBajty.cpp(61,21): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Liceum_r\Documents\Filip Hanslik\zmianaJednostek\bityBajty\bityBajty.cpp(73,21): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Liceum_r\Documents\Filip Hanslik\zmianaJednostek\bityBajty\bityBajty.cpp(98,21): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
+  bityBajty.vcxproj -> C:\Users\Liceum_r\Documents\Filip Hanslik\zmianaJednostek\x64\Debug\bityBajty.exe

@@ -1,4 +1,8 @@
 ﻿  bityBajty.cpp
-D:\Programowanie\bityBajty\bityBajty\bityBajty.cpp(18,20): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-D:\Programowanie\bityBajty\bityBajty\bityBajty.cpp(23,21): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
-  bityBajty.vcxproj -> D:\Programowanie\bityBajty\Debug\bityBajty.exe
+C:\Users\Liceum_r\Documents\Filip Hanslik\zmianaJednostek\bityBajty\bityBajty.cpp(19,20): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Liceum_r\Documents\Filip Hanslik\zmianaJednostek\bityBajty\bityBajty.cpp(23,21): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Liceum_r\Documents\Filip Hanslik\zmianaJednostek\bityBajty\bityBajty.cpp(35,21): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Liceum_r\Documents\Filip Hanslik\zmianaJednostek\bityBajty\bityBajty.cpp(49,21): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Liceum_r\Documents\Filip Hanslik\zmianaJednostek\bityBajty\bityBajty.cpp(77,21): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Liceum_r\Documents\Filip Hanslik\zmianaJednostek\bityBajty\bityBajty.cpp(103,21): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
+  bityBajty.vcxproj -> C:\Users\Liceum_r\Documents\Filip Hanslik\zmianaJednostek\Debug\bityBajty.exe
