@@ -178,6 +178,19 @@ void obliczaniePredkosci() {
 
 }
 
+void obliczaniePliku() {
+	float predkosc;
+	float czas;
+	float rozmiar;
+	
+	system("CLS");
+	cout << "Podaj predkosc lacza w Mb/s: ";
+	cin >> predkosc;
+	cout << endl << "Podaj czas w ktorym ten plik sie pobral (w minutach): ";
+	cin >> czas;
+	cout << "Rozmiar tego pliku to: " << predkosc / (czas*60) <<"Mb";
+}
+
 
 int main()
 {
@@ -187,6 +200,7 @@ int main()
 	cout << "1. Przeliczanie jednostek." << endl;
 	cout << "2. Oblcizanie czasu pobierania." << endl;
 	cout << "3. Obliczanie predkosci lacza." << endl;
+	cout << "4. Obliczanie rozmiaru pliku." << endl;
 	wybor = _getch();
 
 	switch (wybor) {
@@ -201,6 +215,11 @@ int main()
 	case '3':
 		obliczaniePredkosci();
 		break;
+
+	case '4':
+		obliczaniePliku();
+		break;
+
 	}
 
 

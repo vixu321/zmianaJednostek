@@ -5,4 +5,5 @@ C:\Users\Liceum_r\Documents\Filip Hanslik\zmianaJednostek\bityBajty\bityBajty.cp
 C:\Users\Liceum_r\Documents\Filip Hanslik\zmianaJednostek\bityBajty\bityBajty.cpp(49,21): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
 C:\Users\Liceum_r\Documents\Filip Hanslik\zmianaJednostek\bityBajty\bityBajty.cpp(77,21): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
 C:\Users\Liceum_r\Documents\Filip Hanslik\zmianaJednostek\bityBajty\bityBajty.cpp(103,21): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Liceum_r\Documents\Filip Hanslik\zmianaJednostek\bityBajty\bityBajty.cpp(184,8): warning C4101: "rozmiar": lokalna zmienna, do której nie istnieje odwołanie
   bityBajty.vcxproj -> C:\Users\Liceum_r\Documents\Filip Hanslik\zmianaJednostek\Debug\bityBajty.exe
